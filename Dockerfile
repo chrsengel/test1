@@ -7,4 +7,5 @@ RUN apt-get install -y nano \
 
 # install fast ai
 RUN conda update -n base conda
-RUN conda install -c fastai fastbook -c pytorch -c anaconda fastai gh anaconda
+RUN conda install -c fastai -c pytorch -c anaconda fastai gh anaconda
+RUN pip install fastbook
